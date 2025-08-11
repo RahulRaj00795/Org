@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Frutiger';
+  src: url('/fonts/Frutiger.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #fff;
+    --foreground: #000;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Frutiger', Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.limit {
+  /* max-width: 1200px !important; */
+
+}
+
+.limit-center {
+  display: flex;
+  justify-content: center;
+}
+
+.intro {
+  background-image: url('/images/introbg.jpg');
+
+}
+
+.banner {
+  background-image: url('/images/bg.jpg');
+}
