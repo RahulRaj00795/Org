@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 const categories = [
   { label: "ALL", value: "all" },
   { label: "HEALTHCARE", value: "healthcare" },
-  { label: "EDUCATION", value: "education" },
-  { label: "SKILL BUILDING", value: "skill-building" },
+//   { label: "EDUCATION", value: "education" },
+//   { label: "SKILL BUILDING", value: "skill-building" },
 ];
 
 const images = [
@@ -18,7 +18,7 @@ const images = [
 ];
 
 const Photo = () => {
-  const [activeCategory, setActiveCategory] = useState("healthcare");
+  const [activeCategory, setActiveCategory] = useState("all");
 
   const filteredImages =
     activeCategory === "all"
@@ -26,7 +26,8 @@ const Photo = () => {
       : images.filter((img) => img.category === activeCategory);
 
   return (
-    <div className="py-10 max-w-[1200px] mx-auto">
+   <div className="flex justify-center ">
+     <div className="py-10 max-w-[1200px] mx-[50px]">
       <h2 className="text-3xl font-bold text-center mb-6">Gallery</h2>
 
       {/* Tabs */}
@@ -68,6 +69,7 @@ const Photo = () => {
         </AnimatePresence>
       </motion.div>
     </div>
+   </div>
   );
 };
 
