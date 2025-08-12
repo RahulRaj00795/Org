@@ -15,6 +15,13 @@ const images = [
   { src: "/images/p4.jpg", category: "healthcare" },
   { src: "/images/p5.jpg", category: "healthcare" },
   { src: "/images/p6.jpg", category: "healthcare" },
+  { src: "/images/g1.jpg", category: "healthcare" },
+  { src: "/images/g2.jpg", category: "healthcare" },
+  { src: "/images/g3.jpg", category: "healthcare" },
+  { src: "/images/g4.jpg", category: "healthcare" },
+  { src: "/images/g5.jpg", category: "healthcare" },
+  { src: "/images/g6.jpg", category: "healthcare" },
+
 ];
 
 const Photo = () => {
