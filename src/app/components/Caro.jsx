@@ -172,7 +172,8 @@ const Caro = () => {
   };
 
   return (
-    <div className="top-b flex w-full">
+    <div className="top-b flex w-full max-w-[1600px] mx-auto">
+
       <div
         className="flex items-center justify-between w-full gap-6"
         style={{ padding: '20px' }}
@@ -193,96 +194,57 @@ const Caro = () => {
                 <div key={i}>
                   <AnimatePresence mode="wait">
                     {activeSlide === i && (
-                      // <motion.div
-                      //   key={i}
-                      //   initial={{ scale: 0.8, backgroundColor: '#fff', opacity: 0 }}
-                      //   animate={{
-                      //     scale: 1,
-                      //     background: 'linear-gradient(90deg, #004f8c, #0066b3)',
-                      //     opacity: 1,
-                      //     transition: {
-                      //       background: { delay: 0.3, duration: 0.4 },
-                      //       scale: { duration: 0.3 },
-                      //       opacity: { duration: 0.3 },
-                      //     },
-                      //   }}
-                      //   exit={{ opacity: 0, x: -50, transition: { duration: 0.3 } }}
-                      //   style={{
-                      //     color: '#fff',
-                      //     padding: '30px',
-                      //     borderRadius: '8px',
-                      //     height: '300px',
-                      //     overflow: 'hidden',
-                      //   }}
-                      // >
-                      //   <motion.div
-                      //     initial={{ x: 100, opacity: 0 }}
-                      //     animate={{ x: 0, opacity: 1 }}
-                      //     transition={{ delay: 0.6, duration: 0.5 }}
-                      //   >
-                      //     <div style={{ fontSize: '40px', marginBottom: '10px' }}>❝</div>
-                      //     <p style={{ fontSize: '18px', lineHeight: '1.5' }}>{q.text}</p>
-                      //     <p
-                      //       style={{
-                      //         marginTop: '50px',
-                      //         fontWeight: 'bold',
-                      //         color: '#99c',
-                      //       }}
-                      //     >
-                      //       {q.author}
-                      //     </p>
-                      //   </motion.div>
-                      // </motion.div>
-                      <motion.div
-  key={i}
-  initial={{
-    x: 100, // Start from right
-    opacity: 0,
-    backgroundColor: '#fff',
-  }}
-  animate={{
-    x: 0, // Slide to position
-    opacity: 1,
-    background: 'linear-gradient(90deg, #004f8c, #0066b3)',
-    transition: {
-      background: { delay: 0.6, duration: 2 },
-      x: { duration: 2, ease: 'easeOut' },
-      opacity: { duration: 0.4 },
-    },
-  }}
-  exit={{
-    x: -100, // Exit to left
-    opacity: 0,
-    transition: { duration: 2, ease: 'easeIn' },
-  }}
-  style={{
-    color: '#fff',
-    padding: '30px',
-    borderRadius: '4px',
-    height: '300px',
-    overflow: 'hidden',
-  }}
->
-  <motion.div
-    initial={{ x: 50, opacity: 0 }}
-    animate={{ x: 0, opacity: 1 }}
-    transition={{ delay: 1, duration: 2 }}
-  >
-    <div style={{ fontSize: '40px', marginBottom: '10px' }}>❝</div>
-    <p style={{ fontSize: '25px', lineHeight: '1.5' }}>{q.text}</p>
-    <p
-      style={{
-        marginTop: '50px',
-        fontWeight: 'bold',
-        color: '#99c',
-        fontSize: '20px',
 
-      }}
-    >
-      {q.author}
-    </p>
-  </motion.div>
-</motion.div>
+                      <motion.div
+                        key={i}
+                        initial={{
+                          x: 100, // Start from right
+                          opacity: 0,
+                          backgroundColor: '#fff',
+                        }}
+                        animate={{
+                          x: 0, // Slide to position
+                          opacity: 1,
+                          background: 'linear-gradient(90deg, #004f8c, #0066b3)',
+                          transition: {
+                            background: { delay: 0.6, duration: 2 },
+                            x: { duration: 2, ease: 'easeOut' },
+                            opacity: { duration: 0.4 },
+                          },
+                        }}
+                        exit={{
+                          x: -100, // Exit to left
+                          opacity: 0,
+                          transition: { duration: 2, ease: 'easeIn' },
+                        }}
+                        style={{
+                          color: '#fff',
+                          padding: '30px',
+                          borderRadius: '4px',
+                          height: '300px',
+                          overflow: 'hidden',
+                        }}
+                      >
+                        <motion.div
+                          initial={{ x: 50, opacity: 0 }}
+                          animate={{ x: 0, opacity: 1 }}
+                          transition={{ delay: 1, duration: 2 }}
+                        >
+                          <div style={{ fontSize: '40px', marginBottom: '10px' }}>❝</div>
+                          <p style={{ fontSize: '25px', lineHeight: '1.5' }}>{q.text}</p>
+                          <p
+                            style={{
+                              marginTop: '50px',
+                              fontWeight: 'bold',
+                              color: '#99c',
+                              fontSize: '20px',
+
+                            }}
+                          >
+                            {q.author}
+                          </p>
+                        </motion.div>
+                      </motion.div>
 
                     )}
                   </AnimatePresence>
