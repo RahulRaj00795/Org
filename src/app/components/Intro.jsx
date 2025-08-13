@@ -64,7 +64,7 @@ const Intro = () => {
 
       <div ref={ref} className="intro py-[50px]">
         <div className="flex justify-center items-center gap-8 ">
-          <div className="flex  max-w-[1200px]  mx-[50px] gap-10">
+          <div className="flex  max-w-[1200px]  mx-[50px] ">
             {/* Image - Left to center */}
             <motion.div
               initial={{ x: "-100%", opacity: 0 }}
@@ -72,7 +72,7 @@ const Intro = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className=" w-[50%]"
             >
-              <img src="/images/person3.jpg" alt="" className=" h-[360px]  " />
+              <img src="/images/person3.jpg" alt="" className=" h-[460px]  " />
             </motion.div>
 
             {/* Text - Right to center */}
