@@ -68,3 +68,15 @@ body {
    background-size: contain; */
   height: 500px;
 }
+
+.newsbg {
+  background-image: url('/images/newsbg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.card
+{
+  box-shadow: 0px 0px 40px #D4C9B280 !important;
+}
