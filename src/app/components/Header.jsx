@@ -31,7 +31,8 @@ const Header = () => {
           </div>
 
           {/* Navigation */}
-          <div>
+          <div className='lg:flex hidden'>
+
             <div className="flex flex-wrap gap-[30px] justify-center">
               {pages.map((item, index) => (
                 <div key={index} className="flex items-center">

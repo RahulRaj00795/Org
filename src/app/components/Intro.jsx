@@ -64,7 +64,7 @@ const Intro = () => {
 
       <div ref={ref} className="intro py-[50px]">
         <div className="flex justify-center items-center gap-8 ">
-          <div className="flex  max-w-[1200px]  mx-[50px] ">
+          <div className="flex  max-w-[1200px]  mx-[50px] flex-wrap lg:flex-nowrap ">
             {/* Image - Left to center */}
             <motion.div
               initial={{ x: "-100%", opacity: 0 }}

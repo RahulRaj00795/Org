@@ -32,7 +32,7 @@ const News = () => {
             </div>
 
             <div className='w-full  flex flex-col items-center justify-center '>
-                <div className='w-full  justify-center flex gap-4 mx-[50px] py-10 lg:flez '>
+                <div className='w-full  justify-center flex gap-4 mx-[50px] py-10  flex-wrap '>
 
                     {
                         newsData.map((item) => (
