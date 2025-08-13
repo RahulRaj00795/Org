@@ -1,4 +1,6 @@
 'use client'
+import { Button } from 'antd'
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
 const newsData = [
@@ -23,6 +25,8 @@ const newsData = [
 ]
 
 const News = () => {
+    const router = useRouter()
+
     return (
         <section className='w-full max-w-[1600px] mx-auto newsbg justify-center flex py-[50px] flex-col '>
             <div className='w-full max-w-[1200px] mx-auto flex flex-col gap-2 items-center'>
@@ -47,7 +51,11 @@ const News = () => {
 
                 </div>
 
-                <button className='w-[150px] h-[50px] cursor-pointer bg-[#004f8c] text-white rounded-[10px]'>Read More</button>
+                <Button className='w-[150px] !h-[50px] cursor-pointer !bg-[#004f8c] !text-white rounded-[10px] hover:!bg-[#0066b3] '
+
+                    onClick={() => router.push('/news')}
+
+                >Read More</Button>
 
 
 

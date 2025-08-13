@@ -3,7 +3,7 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <div className="intro">
+      <div className="intro mt-[130px]">
         <div className="flex justify-center items-center gap-8  flex-col">
           <div className="flex  max-w-[1200px]  mx-[50px]">
             {/* Image - Left to center */}

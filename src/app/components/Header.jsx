@@ -17,16 +17,17 @@ const Header = () => {
   ]
 
   return (
+
     <div className='w-full top-0 fixed z-10'>
 
       <div className="w-full text-center bg-[#fff] py-[20px] font-[600] flex items-center justify-center gap-[20px]">
         <div className="flex justify-between items-center w-full max-w-[1200px] mx-[50px]">
           {/* Logo */}
-          <div>
+          <div onClick={() => router.push('/')}>
             <img
               src="/images/logo1.png"
               alt="logo"
-              className="h-[80px] limit"
+              className="h-[80px] limit cursor-pointer"
             />
           </div>
 
