@@ -60,19 +60,19 @@ const Intro = () => {
 
   return (
     <>
-     
+
 
       <div ref={ref} className="intro py-[50px]">
         <div className="flex justify-center items-center gap-8 ">
-          <div className="flex  max-w-[1200px]  mx-[50px]">
+          <div className="flex  max-w-[1200px]  mx-[50px] gap-10">
             {/* Image - Left to center */}
             <motion.div
               initial={{ x: "-100%", opacity: 0 }}
               animate={inView ? { x: 0, opacity: 1 } : {}}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className=" w-full"
+              className=" w-[50%]"
             >
-              <img src="/images/person.jpg" alt="" className=" h-[360px]  " />
+              <img src="/images/person3.jpg" alt="" className=" h-[360px]  " />
             </motion.div>
 
             {/* Text - Right to center */}
@@ -86,19 +86,25 @@ const Intro = () => {
                 Dr. Rajesh C. Pandya
               </a>{" "}
               is the founder of{" "}
-              <a href="" className="text-[#68C17C]">
+              <a className="text-[#68C17C]">
                 Pandya Foundation
               </a>{" "}
               & a globally respected technology executive, strategist, and
               humanitarian whose career spans over 32 years across the
               Information Technology and business services landscape. As the
-              current Chief Executive Officer of Quantum Integrators, and former
-              Country Head – Americas for L&T Infotech (LTI), Dr. Pandya has led
+              current <a className="text-[#68C17C]"> Chief Executive Officer of Quantum Integrators</a> , and former
+              Country Head – Americas for <a className="text-[#68C17C]">L&T Infotech (LTI)</a>, Dr. Pandya has led
+
               transformative business initiatives, scaled global delivery
               operations, and built technology partnerships that have not only
               reshaped enterprises but also significantly contributed to
               economic and employment growth in India and the United States.
-              <p></p>
+              <p className="mt-4">
+                A founding pillar of the <a className="text-[#68C17C]">L&T technology group</a> , Dr. Pandya played a vital
+
+                role in the evolution of the business from its early startup phase to a globally
+                recognized $4 billion enterprise. Under his leadership, LTI expanded its international footprint, secured high-value contracts with Fortune 500 companies, and established delivery excellence as a hallmark of India’s IT services reputation. His visionary approach to strategic outsourcing, digital transformation, and talent development created a sustainable model that continues to fuel global demand for Indian technology professionals.
+              </p>
             </motion.div>
           </div>
         </div>
