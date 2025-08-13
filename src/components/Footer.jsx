@@ -1,7 +1,10 @@
+'use client'
 import { MailOutlined, RightCircleOutlined, RightOutlined } from '@ant-design/icons'
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
 const Footer = () => {
+    const router = useRouter()
 
     const pages = [
         {
@@ -32,7 +35,9 @@ const Footer = () => {
 
                 <div className='flex justify-center md:justify-between items-center w-full max-w-[1200px] mx-[50px] flex-wrap gap-[20px]'>
 
-                    <div>
+                    <div onClick={() => router.push('/')} className='cursor-pointer'>
+
+
                         <img src="/images/logo1.png" alt="logo" className=' h-[80px] limit' />
                     </div>
 
