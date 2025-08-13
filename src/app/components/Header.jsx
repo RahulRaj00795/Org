@@ -17,7 +17,8 @@ const Header = () => {
   ]
 
   return (
-    <div className=''>
+    <div className='w-full top-0 fixed z-10'>
+
       <div className="w-full text-center bg-[#fff] py-[20px] font-[600] flex items-center justify-center gap-[20px]">
         <div className="flex justify-between items-center w-full max-w-[1200px] mx-[50px]">
           {/* Logo */}
@@ -36,11 +37,10 @@ const Header = () => {
                 <div key={index} className="flex items-center">
                   <a
                     href={item.link}
-                    className={`${
-                      pathname === item.link
-                        ? 'text-blue-500 border-b-2 border-blue-500'
-                        : 'text-black'
-                    } hover:text-blue-400 transition-colors`}
+                    className={`${pathname === item.link
+                      ? 'text-blue-500 border-b-2 border-blue-500'
+                      : 'text-black'
+                      } hover:text-blue-400 transition-colors`}
                   >
                     {item.name}
                   </a>

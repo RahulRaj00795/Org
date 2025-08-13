@@ -31,8 +31,8 @@ const News = () => {
                 <p className='text-[35px] text-[#000333]'>Read latest Updates</p>
             </div>
 
-            <div className='w-full  flex flex-col items-center justify-center'>
-                <div className='w-full  justify-center flex gap-4 mx-[50px] py-10 '>
+            <div className='w-full  flex flex-col items-center justify-center '>
+                <div className='w-full  justify-center flex gap-4 mx-[50px] py-10 lg:flez '>
 
                     {
                         newsData.map((item) => (
