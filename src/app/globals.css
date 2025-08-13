@@ -59,3 +59,12 @@ body {
 .banner {
   background-image: url('/images/bg.jpg');
 }
+
+.top-b {
+  background-image: url('/images/top-banner.jpg');
+
+  background-repeat: no-repeat;
+  /* background-position: right;
+   background-size: contain; */
+  height: 500px;
+}

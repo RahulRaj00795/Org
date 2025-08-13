@@ -60,20 +60,9 @@ const Intro = () => {
 
   return (
     <>
-      {/* AntD Carousel at the top */}
-      {/* <Carousel autoplay dots={true} effect="fade" className="mb-10">
-        {data.map((item, index) => (
-          <div key={index} className="h-[400px] relative">
-            <img
-              src={item.img}
-              alt={item.title}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        ))}
-      </Carousel> */}
+     
 
-      <div ref={ref} className="intro">
+      <div ref={ref} className="intro py-[50px]">
         <div className="flex justify-center items-center gap-8 ">
           <div className="flex  max-w-[1200px]  mx-[50px]">
             {/* Image - Left to center */}
