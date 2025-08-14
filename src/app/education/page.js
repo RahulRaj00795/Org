@@ -25,7 +25,7 @@ const initiatives = [
 
 const EducationPage = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 mt-[90px] md:mt-[130px]">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-500 to-indigo-600 py-16 px-6 text-center text-white">
         <h1 className="text-4xl font-bold mb-4">Education for Every Child</h1>

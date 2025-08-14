@@ -2,7 +2,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="mt-[130px]">
+    <div className="mt-[90px] md:mt-[130px]">
       <div className="intro ">
         <div className="flex justify-center items-center gap-8  flex-col">
           <div className="flex  max-w-[1200px]  mx-[20px]  md:mx-[50px]   flex-col md:flex-row">

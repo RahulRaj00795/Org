@@ -4,7 +4,7 @@ import React from "react";
 
 const Page = () => {
   return (
-    <div className="bg-white mt-[130px]">
+    <div className="bg-white mt-[90px] md:mt-[130px]">
       {/* Vision & Intro Section */}
       <section
         className="max-w-[1200px] mx-auto px-4 py-12 grid md:grid-cols-2 gap-8 items-center"

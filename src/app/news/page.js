@@ -28,7 +28,7 @@ For more information please visit iba.adlabscovidtest.com.`,
 
 const Page = () => {
   return (
-    <div className="max-w-[1200px] mx-auto my-[130px] px-4 m">
+    <div className="max-w-[1200px] mx-auto mt-[90px] md:mt-[130px] mb-[130px] px-4 m">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Left Main News */}
         <div className="lg:col-span-2">

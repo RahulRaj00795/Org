@@ -172,7 +172,7 @@ const Caro = () => {
   };
 
   return (
-    <div className="top-b flex w-full max-w-[1600px] mx-auto mt-[120px]">
+    <div className="top-b flex w-full max-w-[1600px] mx-auto mt-[90px] md:mt-[130px]">
 
       <div
         className="flex items-center justify-between w-full gap-6"
