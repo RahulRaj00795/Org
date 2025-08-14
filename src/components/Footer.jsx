@@ -22,7 +22,7 @@ const Footer = () => {
         },
         {
             name: 'HEALTHCARE',
-            link: '/health-care'
+            link: '/healthcare'
         },
 
     ]
