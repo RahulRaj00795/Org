@@ -64,13 +64,13 @@ const Intro = () => {
 
       <div ref={ref} className="intro py-[50px]">
         <div className="flex justify-center items-center gap-8 ">
-          <div className="flex  max-w-[1200px]  mx-[50px] flex-wrap lg:flex-nowrap ">
+          <div className="flex  max-w-[1200px]  mx-[15px]  gap-1.5 md:mx-[50px] flex-wrap lg:flex-nowrap ">
             {/* Image - Left to center */}
             <motion.div
               initial={{ x: "-100%", opacity: 0 }}
               animate={inView ? { x: 0, opacity: 1 } : {}}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className=" w-[50%]"
+              className=" w-full md:w-[50%]"
             >
               <img src="/images/person3.jpg" alt="" className=" h-[460px]  " />
             </motion.div>
@@ -112,7 +112,8 @@ const Intro = () => {
 
       <div className="banner py-[50px]">
         <div className="flex justify-center items-center gap-8  ">
-          <div className="flex  max-w-[1200px] justify-between w-full gap-[20px]  mx-[50px] flex-wrap lg:flex-nowrap ">
+          <div className="flex  max-w-[1200px] justify-between w-full gap-[20px] mx-[15px]  md:mx-[50px] flex-wrap lg:flex-nowrap ">
+
             {data.map((item, index) => (
               <div
                 key={index}

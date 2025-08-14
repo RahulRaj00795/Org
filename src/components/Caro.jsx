@@ -182,7 +182,8 @@ const Caro = () => {
           {/* Left Button */}
           <button
             onClick={() => sliderRef.current.slickPrev()}
-            className="text-[#004f8c] text-2xl font-bold bg-white rounded-[50%] h-fit p-[10px] flex items-center justify-center cursor-pointer hover:bg-transparent"
+            className="text-[#004f8c] text-2xl font-bold hidden bg-white rounded-[50%] h-fit p-[10px] flex items-center justify-center cursor-pointer hover:bg-transparent  md:block"
+
           >
             <LeftOutlined />
           </button>
@@ -232,8 +233,9 @@ const Caro = () => {
                         >
                           <div className='w-full mb-[20px]'><img src="/images/qoutes.png" alt="" className='w-[50px] h-[50px]' /></div>
 
-                          <div className='flex flex-col gap-10'>
-                            <p style={{ fontSize: '20px', lineHeight: '1.5' }}>{q.text}</p>
+                          <div className='flex flex-col gap-[10px] md:gap-10 w-fit'>
+                            <p style={{ lineHeight: '1.5' }} className='text-[18px] md:text-[20px]'>{q.text}</p>
+
                             <p
                               style={{
                                 marginTop: '10px',
@@ -260,7 +262,7 @@ const Caro = () => {
         {/* Right Button */}
         <button
           onClick={() => sliderRef.current.slickNext()}
-          className="text-[#004f8c] text-2xl font-[600] bg-white rounded-[50%] h-fit p-[10px] flex items-center justify-center cursor-pointer hover:bg-transparent"
+          className="text-[#004f8c] text-2xl font-[600] bg-white rounded-[50%] h-fit p-[10px] flex items-center justify-center cursor-pointer hover:bg-transparent hidden md:block"
         >
           <RightOutlined />
         </button>

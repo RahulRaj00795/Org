@@ -40,7 +40,7 @@ const News = () => {
 
                     {
                         newsData.map((item) => (
-                            <div key={item.id} className='w-[400px] flex flex-col gap-2 items-center bg-white card '  >
+                            <div key={item.id} className='w-[400px] flex flex-col gap-2 items-center bg-white card mx-[15px] '  >
                                 <img src={item.pic} alt={item.title} className='w-full h-[200px] ' />
 
                                 <p className='text-[20px] text-center  p-2 font-[400] text-[#000333]'>{item.title}</p>

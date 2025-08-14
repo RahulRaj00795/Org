@@ -2,12 +2,12 @@ import React from "react";
 
 const page = () => {
   return (
-    <div>
-      <div className="intro mt-[130px]">
+    <div className="mt-[130px]">
+      <div className="intro ">
         <div className="flex justify-center items-center gap-8  flex-col">
-          <div className="flex  max-w-[1200px]  mx-[50px]">
+          <div className="flex  max-w-[1200px]  mx-[20px]  md:mx-[50px]   flex-col md:flex-row">
             {/* Image - Left to center */}
-            <div className="w-[460px]">
+            <div className=" w-full md:w-[460px]">
               <img
                 src="/images/person2.jpg"
                 alt=""
@@ -35,7 +35,7 @@ const page = () => {
               economic and employment growth in India and the United States.
             </div>
           </div>
-          <div className="flex  max-w-[1200px]  mx-[50px]   leading-relaxed text-[20px]">
+          <div className="flex  max-w-[1200px] mx-[20px]  md:mx-[50px]   leading-relaxed text-[20px]">
             Celebrating Culture, Community & Connection Pandya Foundation
             Presents: Garba Night in New Jersey For the past several years, the
             Pandya Foundation has proudly organized Garba Night in New Jersey —

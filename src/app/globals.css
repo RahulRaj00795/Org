@@ -86,3 +86,16 @@ body {
 {
   max-width: 400px ;
 }
+
+@media only screen and (max-width: 600px) {
+  .slider
+  {
+    max-width: 250px ;
+    opacity: 0.8;
+    height: fit-content;
+  }
+  .top-b
+  {
+    background-position: center !important;
+  }
+}

@@ -34,7 +34,7 @@ const Photo = () => {
 
   return (
     <div className="flex justify-center ">
-      <div className="py-10 max-w-[1200px] mx-[50px]">
+      <div className="py-10 max-w-[1200px] mx-[10px]  md:mx-[50px]">
         <h2 className="text-3xl font-bold text-center mb-6">Gallery</h2>
 
         {/* Tabs */}
@@ -63,7 +63,7 @@ const Photo = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3 }}
-                className="overflow-hidden rounded-lg shadow-lg flex-[1_1_calc(25%-1rem)] min-w-[250px] max-w-[300px]"
+                className="overflow-hidden rounded-lg shadow-lg flex-[1_1_calc(25%-1rem)] w-full min-w-[250px] md:max-w-[300px]"
               >
                 <img
                   src={img.src}
