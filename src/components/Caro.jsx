@@ -188,7 +188,7 @@ const Caro = () => {
           </button>
 
           {/* Slider */}
-          <div style={{ flex: '1 1 auto', maxWidth: '500px' }}>
+          <div className='slider'>
             <Slider ref={sliderRef} {...settings}>
               {quotes.map((q, i) => (
                 <div key={i}>
@@ -230,19 +230,22 @@ const Caro = () => {
                           animate={{ x: 0, opacity: 1 }}
                           transition={{ delay: 1, duration: 2 }}
                         >
-                          <div style={{ fontSize: '40px', marginBottom: '10px' }}>❝</div>
-                          <p style={{ fontSize: '25px', lineHeight: '1.5' }}>{q.text}</p>
-                          <p
-                            style={{
-                              marginTop: '50px',
-                              fontWeight: 'bold',
-                              color: '#99c',
-                              fontSize: '20px',
+                          <div className='w-full mb-[20px]'><img src="/images/qoutes.png" alt="" className='w-[50px] h-[50px]' /></div>
 
-                            }}
-                          >
-                            {q.author}
-                          </p>
+                          <div className='flex flex-col gap-10'>
+                            <p style={{ fontSize: '20px', lineHeight: '1.5' }}>{q.text}</p>
+                            <p
+                              style={{
+                                marginTop: '10px',
+                                fontWeight: 'bold',
+                                color: '#99c',
+                                fontSize: '20px',
+
+                              }}
+                            >
+                              {q.author}
+                            </p>
+                          </div>
                         </motion.div>
                       </motion.div>
 

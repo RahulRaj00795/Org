@@ -61,11 +61,11 @@ body {
 }
 
 .top-b {
-  background-image: url('/images/top-banner.jpg');
+  background-image: url('/images/banner.png');
 
   background-repeat: no-repeat;
-  /* background-position: right;
-   background-size: contain; */
+  /* background-position: right; */
+   background-size: cover;
   height: 500px;
 }
 
@@ -79,4 +79,10 @@ body {
 .card
 {
   box-shadow: 0px 0px 40px #D4C9B280 !important;
+}
+
+
+.slider
+{
+  max-width: 400px ;
 }
