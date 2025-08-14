@@ -36,7 +36,6 @@ const Header = () => {
           </div>
 
           <MenuOutlined onClick={() => setOpen(!open)} className='menu-icon' style={
-
             { fontSize: '30px', }
           } />
 
@@ -52,12 +51,20 @@ const Header = () => {
           >
             <div className='gap-[20px] flex flex-col'>
 
-              <Button onClick={() => router.push('/')} className='w-full'>Home</Button>
+              <Button onClick={() => {
+                router.push('/')
+                setOpen(false)
+
+              }} className='w-full'>Home</Button>
 
               {pages.map((item, index) => (
                 <div key={index} className="flex items-center ">
                   <Button
-                    onClick={() => router.push(item.link)}
+                    onClick={() => {
+                      router.push(item.link)
+                      setOpen(false)
+
+                    }}
 
                     className={`w-full  ${pathname === item.link
 
