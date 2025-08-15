@@ -72,7 +72,7 @@ const Intro = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className=" w-full md:w-[50%]"
             >
-              <img src="/images/person3.jpg" alt="" className=" h-[460px]  " />
+              <img src="/images/p6.jpg" alt="" className=" h-[460px]  " />
             </motion.div>
 
             {/* Text - Right to center */}
