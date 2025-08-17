@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pandyafoundation.org/api/sitemap
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin or private areas (if any exist in the future)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow important pages
+Allow: /about-us/
+Allow: /education/
+Allow: /healthcare/
+Allow: /skill-building/
+Allow: /news/
+
+# Allow static assets
+Allow: /images/
+Allow: /fonts/
+Allow: /public/

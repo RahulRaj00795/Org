@@ -72,7 +72,8 @@ const Footer = () => {
 
                         }} />
 
-                        <a href="">contactus@pandya-foundation.org</a>
+                        <a href="mailto:contactus@pandyafoundation.org">contactus@pandyafoundation.org</a>
+
                     </div>
                 </div>
 
