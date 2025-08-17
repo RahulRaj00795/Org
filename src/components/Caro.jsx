@@ -222,7 +222,9 @@ const Caro = () => {
                           color: '#fff',
                           padding: '30px',
                           borderRadius: '4px',
-                          height: '300px',
+                          minHeight: '300px',
+                          height: 'fit-content',
+
                           overflow: 'hidden',
                         }}
                       >
