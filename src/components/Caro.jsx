@@ -239,6 +239,8 @@ const Caro = () => {
                             <p
                               style={{
                                 marginTop: '10px',
+                                marginBottom: '20px',
+
                                 fontWeight: 'bold',
                                 color: '#99c',
                                 fontSize: '20px',
