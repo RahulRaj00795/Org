@@ -58,6 +58,9 @@ export const metadata = {
   viewport: "width=device-width, initial-scale=1",
   themeColor: "#68C17C",
   manifest: "/manifest.json",
+  verification: {
+    google: "Y1jpKm1-KlekiOVQ8VQku-6V0nmydPhvkWNux6YhhC8",
+  },
 };
 
 export default function RootLayout({ children }) {
