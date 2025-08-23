@@ -124,7 +124,7 @@ const Intro = () => {
                   <img
                     src={item.img}
                     alt=""
-                    className="h-[230px] w-full object-cover"
+                    className="h-[300px] w-full object-cover"
 
                   />
                 </div>
