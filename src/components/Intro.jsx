@@ -10,21 +10,21 @@ const Intro = () => {
 
   const data = [
     {
-      img: "/images/healthb.webp",
+      img: "/images/h1.jpg",
       title: "Health",
       desc: "The Pandya Foundation is committed to bringing the benefits of advanced medical technology to the disadvantaged and the needy. Its wide-ranging initiatives in south Gujarat and in Mumbai are extending a lifeline of hope to those in need.",
       link: "/health-care",
       color: "#77B9D1",
     },
     {
-      img: "/images/edub.jpg",
+      img: "/images/e1.jpg",
       title: "Education",
       desc: "The Pandya Foundation promotes education by setting up schools in rural and urban India, with special emphasis on creating learning opportunities for the girl child. Its schools in south Gujarat cater largely to children from the disadvantaged sections of society.",
       link: "/education",
       color: "#F2C012",
     },
     {
-      img: "/images/skillb.jpg",
+      img: "/images/skill1.png",
       title: "Skill Building",
       desc: "The Pandya Foundation is the first to introduce the concept of skill training to villages in south Gujarat. Since inception, has over 500 male students and 100 female students have graduated from various colleges of maharashtra.  ",
       link: "/skill-building",
@@ -124,7 +124,8 @@ const Intro = () => {
                   <img
                     src={item.img}
                     alt=""
-                    className="h-full w-full object-cover"
+                    className="h-[230px] w-full object-cover"
+
                   />
                 </div>
                 <div className="w-full h-[230px] ">
