@@ -22,3 +22,4 @@ Allow: /news/
 Allow: /images/
 Allow: /fonts/
 Allow: /public/
+

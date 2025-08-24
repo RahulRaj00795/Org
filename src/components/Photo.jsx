@@ -21,8 +21,23 @@ const images = [
   { src: "/images/g4.jpg", category: "healthcare" },
   { src: "/images/g5.jpg", category: "healthcare" },
   { src: "/images/g6.jpg", category: "healthcare" },
+  { src: "/images/g9.jpg", category: "healthcare" },
+  { src: "/images/g8.jpg", category: "healthcare" },
+
+  { src: "/images/g77.jpg", category: "healthcare" },
+  { src: "/images/g88.jpg", category: "healthcare" },
+  { src: "/images/g99.jpg", category: "healthcare" },
 
 ];
+const imagesWithText = [
+  { src: "/images/g11.jpg", text: 'Award given by Padma Bhushan Mr AM Naik, Chairman of Larsen & Toubro' },
+  { src: "/images/g22.jpg", text: 'Organizing Indian, keeping alive Hindi cultural heritage and traditions alive in USA by inviting various artists from India and to USA' },
+  { src: "/images/g33.jpg", text: 'Honourable Minister of Maharashtra, Industries Department,Shri Uday Samant ,' },
+  { src: "/images/g44.jpg", text: 'With Vivek Ramaswamy, USA Presidential candidate' },
+  { src: "/images/g55.jpg", text: 'New Jersey State house with Gorvenor Phil Murphy, Speaker of the house Craig Coughlin' },
+  { src: "/images/g66.jpg", text: 'With NJ State Assemblymen Sterley Stanley and Assemblymen Robert Karabincheck' },
+
+]
 
 const Photo = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -38,20 +53,28 @@ const Photo = () => {
         <h2 className="text-3xl font-bold text-center mb-6">Gallery</h2>
 
         {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
-          {categories.map((cat) => (
-            <button
-              key={cat.value}
-              onClick={() => setActiveCategory(cat.value)}
-              className={`font-semibold ${activeCategory === cat.value
-                ? "bg-blue-800 text-white px-4 py-2 rounded-lg"
-                : "text-black hover:text-blue-800"
-                }`}
+
+        <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
+          {imagesWithText.map((item, idx) => (
+            <motion.div
+              key={item.src}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: idx * 0.1 }}
+              className="rounded-xl shadow-lg overflow-hidden bg-white"
             >
-              {cat.label}
-            </button>
+              <img
+                src={item.src}
+                alt={item.text}
+                className="w-full h-64 object-cover object-top hover:scale-105 transition-transform duration-300"
+              />
+              <div className="p-4 text-center text-[16px] font-bold #e0e0e0">
+                {item.text}
+              </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         {/* Flex Image Layout */}
         <motion.div className="flex flex-wrap gap-4 justify-center">
