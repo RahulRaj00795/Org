@@ -18,6 +18,7 @@ const Header = () => {
     { name: 'SKILL BUILDING', link: '/skill-building' },
     { name: 'EDUCATION', link: '/education' },
     { name: 'HEALTHCARE', link: '/healthcare' },
+    { name: 'AWARDS', link: '/awards' }
   ]
 
   return (

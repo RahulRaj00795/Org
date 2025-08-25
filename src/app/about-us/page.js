@@ -79,7 +79,7 @@ const page = () => {
         />
       </Head>
       <div className="mt-[90px] md:mt-[130px]">
-        <div className="intro ">
+        <div className="intro bg-no-repeat ">
           <div className="flex justify-center items-center gap-8  flex-col">
             <div className="flex  max-w-[1200px]  mx-[20px]  md:mx-[50px]   flex-col md:flex-row">
               {/* Image - Left to center */}
@@ -112,41 +112,80 @@ const page = () => {
                 United States.
               </div>
             </div>
-            <div className="flex  max-w-[1200px] mx-[20px]  md:mx-[50px]   leading-relaxed text-[20px]">
-              Pandya Foundation is more than just a non-profit — it is a
-              movement of compassion, responsibility, and family-driven service.
-              Officially established in March 2020 as a registered 501(c)(3)
-              organization in New Jersey, the Foundation carries forward a
-              legacy of community service that began in 2008. Founded by Dr.
-              Rajesh C. Pandya and Shilpa Pandya, it was born out of their
-              shared vision to create meaningful change and uplift lives through
-              selfless service. From the very beginning, the Pandya family
-              believed in the power of kindness and the importance of standing
-              by the community in times of need. Long before its formal
-              registration, the Foundation’s efforts included food drives, youth
-              engagement, senior citizen support, and healthcare assistance —
-              always guided by the principle that “no act of service is too
-              small.” When the world faced the COVID-19 pandemic, Pandya
-              Foundation became a pillar of hope. It organized community testing
-              sites, distributed essential healthcare supplies, and provided
-              food and relief support to families and senior citizens at a time
-              when help was needed most. These efforts not only strengthened the
-              Foundation’s bond with the community but also expanded its mission
-              to create sustainable, long-term impact. Today, under the
-              leadership of its founders, Dr. Raj Pandya and Shilpa Pandya, the
-              Foundation continues to grow as a beacon of service. Its work
-              spans across healthcare, education, youth empowerment, senior
-              care, and social welfare initiatives, while also collaborating
-              with other organizations to magnify its reach. By actively
-              involving the next generation in volunteerism, the Foundation
-              ensures that the values of compassion, empathy, and responsibility
-              remain alive for years to come. At its heart, Pandya Foundation
-              remains a family-led initiative with a global vision. It is built
-              on the belief that small acts of kindness can create lasting waves
-              of change — and through every project, drive, and initiative, the
-              Foundation strives to build a stronger, healthier, and more
-              compassionate world for all.
+            <div className="  max-w-[1200px] mx-[20px]  md:mx-[50px]   leading-relaxed text-[20px]">
+              <a href="" className="font-[600] text-[#68C17c]">
+                Pandya Foundation
+              </a>{" "}
+              is more than just a non-profit — it is a movement of compassion,
+              responsibility, and family-driven service. Officially established
+              in March 2020 as a registered 501(c)(3) organization in New
+              Jersey, the Foundation carries forward a legacy of community
+              service that began in 2008. Founded by{" "}
+              <a href="" className="font-[600] text-[#68C17c]">
+                Dr. Rajesh C. Pandya
+              </a>{" "}
+              and{" "}
+              <a href="" className="font-[600] text-[#68C17c]">
+                Shilpa Pandya
+              </a>
+              , it was born out of their shared vision to create meaningful
+              change and uplift lives through selfless service. From the very
+              beginning, the Pandya family believed in the power of kindness and
+              the importance of standing by the community in times of need. Long
+              before its formal registration, the Foundation’s efforts included
+              food drives, youth engagement, senior citizen support, and
+              healthcare assistance — always guided by the principle that “no
+              act of service is too small.” When the world faced the COVID-19
+              pandemic, Pandya Foundation became a pillar of hope. It organized
+              community testing sites, distributed essential healthcare
+              supplies, and provided food and relief support to families and
+              senior citizens at a time when help was needed most. These efforts
+              not only strengthened the Foundation’s bond with the community but
+              also expanded its mission to create sustainable, long-term impact.
+              Today, under the leadership of its founders, Dr. Rajesh C. Pandya
+              and Shilpa Pandya, the Foundation continues to grow as a beacon of
+              service. Its work spans across healthcare, education, youth
+              empowerment, senior care, and social welfare initiatives, while
+              also collaborating with other organizations to magnify its reach.
+              By actively involving the next generation in volunteerism, the
+              Foundation ensures that the values of compassion, empathy, and
+              responsibility remain alive for years to come. At its heart,
+              Pandya Foundation remains a family-led initiative with a global
+              vision. It is built on the belief that small acts of kindness can
+              create lasting waves of change — and through every project, drive,
+              and initiative, the Foundation strives to build a stronger,
+              healthier, and more compassionate world for all.
             </div>
+
+            <div className="max-w-[1200px] w-full mx-[20px] md:mx-[50px] mt-10 grid md:grid-cols-2 gap-8">
+              {/* Mission Card */}
+              <div className="bg-white shadow-xl rounded-2xl p-8 md:p-12 text-center border border-gray-100">
+                <h2 className="text-3xl font-bold text-[#68C17C] mb-6">
+                  Our Mission
+                </h2>
+                <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-bold">
+                  To serve humanity with compassion by uplifting communities,
+                  empowering youth, supporting seniors, and providing
+                  healthcare, education, and social welfare. We are committed to
+                  transforming small acts of kindness into lasting change that
+                  strengthens society locally and globally.
+                </p>
+              </div>
+
+              {/* Vision Card */}
+              <div className="bg-white shadow-xl rounded-2xl p-8 md:p-12 text-center border border-gray-100">
+                <h2 className="text-3xl font-bold text-[#68C17C] mb-6">
+                  Our Vision
+                </h2>
+                <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-bold">
+                  To build a world where every individual has the opportunity to
+                  live with dignity, hope, and support — creating stronger,
+                  healthier, and more compassionate communities for generations
+                  to come.
+                </p>
+              </div>
+            </div>
+
             <div className="flex  max-w-[1200px] mx-[20px]  md:mx-[50px]   leading-relaxed text-[20px]">
               Celebrating Culture, Community & Connection Pandya Foundation
               Presents: Garba Night in New Jersey For the past several years,

@@ -110,6 +110,66 @@ const Intro = () => {
         </div>
       </div>
 
+      <div ref={ref} className=" py-[50px]">
+        <div className="flex justify-center items-center gap-8 ">
+          <div className="flex  max-w-[1200px]  mx-[15px] flex-col-reverse lg:flex-row  gap-4 md:mx-[50px] flex-wrap lg:flex-nowrap ">
+            {/* Image - Left to center */}
+
+
+            {/* Text - Right to center */}
+            <div
+              className=" w-full leading-relaxed text-[20px] font-[400] "
+
+            >
+              <h1 className="text-3xl font-bold mb-4">
+                Founder&apos;s Message
+              </h1>
+              When we founded the Pandya Foundation, our vision was simple yet profound — to give back to the community that has given us so much. What began in 2008 as small acts of service — organizing food drives, supporting families in need, and helping seniors — has now grown into a movement that reaches across borders and cultures.
+              The official registration of Pandya Foundation in March 2020 as a 501(c)(3) organization was not the start of our journey, but rather the continuation of a family legacy built on compassion, responsibility, and unity. Together with volunteers, partners, and supporters like you, we have been able to extend a helping hand to thousands — from providing meals and healthcare support during the COVID-19 crisis to empowering youth and caring for our seniors.
+              We strongly believe that true change begins with kindness. Every initiative, no matter how big or small, has the power to inspire others and create ripples of hope. Our mission is not just to provide aid but to build stronger, more compassionate communities where everyone feels supported and valued.
+              As we continue this journey, we invite you to stand with us, contribute your time, energy, and ideas, and join us in creating a brighter future. Together, we can transform compassion into action and action into lasting change.
+              <div className="mt-2 font-[600] text-[#000]" >
+
+                With gratitude, <br />
+                Dr. Rajesh C. Pandya & Shilpa Pandya<br />
+                Founder&apos;s,  Pandya Foundation
+              </div>
+
+            </div>
+
+
+            <div
+
+              className=" w-full "
+            >
+              <img src="/images/g55.jpg" alt="" className=" h-[460px]  " />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="flex justify-center items-center gap-8  flex-col mb-[50px]">
+        <div className="flex  max-w-[1200px]  mx-[15px]  md:mx-[50px]   flex-col md:flex-col">
+          <div>
+            <img src="/images/g55.jpg" alt="family" className="!w-[400px]" />
+
+
+          </div>
+          <div>
+
+            <p>When we founded the Pandya Foundation, our vision was simple yet profound — to give back to the community that has given us so much. What began in 2008 as small acts of service — organizing food drives, supporting families in need, and helping seniors — has now grown into a movement that reaches across borders and cultures.
+              The official registration of Pandya Foundation in March 2020 as a 501(c)(3) organization was not the start of our journey, but rather the continuation of a family legacy built on compassion, responsibility, and unity. Together with volunteers, partners, and supporters like you, we have been able to extend a helping hand to thousands — from providing meals and healthcare support during the COVID-19 crisis to empowering youth and caring for our seniors.
+              We strongly believe that true change begins with kindness. Every initiative, no matter how big or small, has the power to inspire others and create ripples of hope. Our mission is not just to provide aid but to build stronger, more compassionate communities where everyone feels supported and valued.
+              As we continue this journey, we invite you to stand with us, contribute your time, energy, and ideas, and join us in creating a brighter future. Together, we can transform compassion into action and action into lasting change.
+              With gratitude,
+              Dr. Raj Pandya & Shilpa Pandya
+              Founders, Pandya Foundation
+            </p>
+          </div>
+        </div>
+      </div> */}
+
+
       <div className="banner py-[50px]">
         <div className="flex justify-center items-center gap-8  ">
           <div className="flex  max-w-[1200px] justify-between w-full gap-[20px] mx-[15px]  md:mx-[50px] flex-wrap lg:flex-nowrap ">
